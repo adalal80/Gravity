@@ -1,6 +1,7 @@
 ---
 layout: post
-title: this is the first blog post
+title: First Blog Post
 ---
 
-This is my first blog post. Today is September 26, 2016. 
+This is my first blog post. I am a new student in the General Assembly's Data Science 
+Immersive course in NYC.
