@@ -35,13 +35,20 @@ The following predictors are used in the regression:
 5. 2015 Yearly Per Capita Income per County
 
 # The target variable
-Bottles Sold, which is the sum of all bottles sold per store number
+Bottles Sold, which is the sum of all bottles sold per store number. The histogram, shown below, is broken down in groups of bottle sold. From the y-axis, it can be shown that the bottles sold is positively skewed.
+
+![Bottles Sold](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_bottles_histogram.png?raw=true)
 
 # Unique Items per Store
 This predictor looks at all unique items per store number and using it as a proxy variable for store size. Hypothesis is that this predictor should be positively correlated with Bottles Sold.
 
+![unique items](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_unique_items_store.png?raw=true)
+
+
 # Number of Stores per City
 Summing all the stores in a City gives Number of Stores per City, which is used as number of competitors. This predictor should be negatively correlated with Bottles Sold
+
+![number of stores per city](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_stores_city.png?raw=true)
 
 # Average Price
 Aggregating total Sales (Dollars) and Bottle Sales, and taking an average of Sales/Bottles gives average price of the goods sold at each store. Price should be negatively correlated with Bottles Sold
@@ -50,8 +57,12 @@ Aggregating total Sales (Dollars) and Bottle Sales, and taking an average of Sal
 
 This external data is from the [www.iowadatacenter.com](http://www.iowadatacenter.org/) website.
 
+![Population](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_population.png?raw=true)
+
 # Per Capita Income
 This external data is from the [www.iowadatacenter.com](http://www.iowadatacenter.org/) website. 
+
+![income](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_income.png?raw=true)
 
 Both the Population and Per Capita Income should be positively correlated with Bottles Sales, as the number of people in a city as well as disposal income, the higher the demand for goods.
 
