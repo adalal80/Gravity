@@ -80,18 +80,53 @@ Linear Regression will be peformed on the training set, which will then be used 
 The correlation on the training dataset is 0.88. The coefficients for the regression show the strongest predictor is  Unique Items (positively correlated), followed by Average Price (negatively correlated), Stores per City/Number of competition (negatively correlated), and Population and Per Capital Yearly Income (both positively correlated). These relationships are what we expect to see: the number of items in a store would show that more available products to purchase, and as the number of competitors in the city as well as price should decrease the bottles sold. Population and Income should be positively correlated as the more people are in a city, the higher demand should be, and the more disposable income a person has, the more the person is able to spend on liquor. If the assumption of the Yearly per Capita Income is uniformly distributed across all cities in the county does not hold, then there would be a stronger bias, which requires city level Yearly per Capital Income.
 
 ## Forecasting a new entry 
+first method:
 What happens if another store enters the market? Assuming Quantity (Bottles Sold per City) and Avg Price does not change (also means Total Sales (Dollars) per city does not change), if we increased number of stores per city by 1, we can calculate the new AvgSales with entry of a new store. Sorting from highest to lowest, we will find top 10 cities as consideration for markets to expand.
 
 Once we know which markets to enter, we can find the average number of items among the competitors,types of competitors, and also the items and prices to which we place in the store.
 
 
-The following cities are either subarbs (Windsor Heights, Bettendorf, Coralville), college towns (Mt. Vernon, Iowa CityCedar Falls, or near a resort/lake (Spirit Lake, Milford, Mason City). Categorizing the Category Name to bins of liquor types, we can find the ideal mix of inventory using the average items per store, which was calculated above (164 items per store)
+The following cities are either suburbs (Windsor Heights, Bettendorf, Coralville), college towns (Mt. Vernon, Iowa CityCedar Falls, or near a resort/lake (Spirit Lake, Milford, Mason City). Categorizing the Category Name to bins of liquor types, we can find the ideal mix of inventory using the average items per store, which was calculated above (164 items per store)
+
+A second method was performed using Predicted Sales (Predicted Bottles Sold * Average Price - assumed constant). A new list of top 10 cities (predicted sales / n + 1) resulted in 7 of the 10 cities found in method 1. 
+
+The seven Cities that are in the list above:
+* Windsor Heights
+* Cedar Falls
+* Milford
+* Iowa City
+* Mt. Vernon
+* Mason City
+* Coralville
+
+Three new cities are in the top 10:
+
+* Ames (college town)
+* Monticello (rural iowa)
+* Clear Lake (resort, next to Mason City)
+
+Given these two lists, it is recommended that these Cities be evaluated further for new location due to proximity colleges and distance to big cities:
+* Windsor Heights
+* Cedar Falls
+* Milford/Spirit Lake
+* Iowa City/Coralville
+* Ames
+* Mason City/Clear Lake
 
 
 ## Conclusion
 
 Given the 10% random sample of the Iowa Liquor Sales, the log-normalized Linear Regression Model was used to fit the data to the model. Using the yearly Bottles Sold per each store as the target variables, the predictors Unique Items per Store, Stores per City, Avg Price, Population, and Income were used to fit the model. The correlation and MSE of the data was 0.88 and 0.17, respectively. The model was then used to predict on the test set, and comparing actual Bottles Sold to predicted Bottles Sold 0.87 and 0.19, respectively.
 
-Top 10 Cities are recommended using Average Sales per number of competition, which is stores per city. Since we are interested in the scenario where a new store enters the market. We add 1 to the stores per city and divide Avg Sales by this number. Also assumed was that avg price and bottles sold per city were constant. The following cities are recommended for new markets for a new store location: Mt Vernon, Windsor Heights, Milford, Bettendorf, Iowa City, Mason City, Clinton, Spirit Lake, Cedar Falls, and Coralville. Using the types of Liquor sold (binning them into types), the ideal mix of products to be sold was calculated, which is based on the aggregate of top 10 cities. 
+Top 10 Cities are recommended using Average Sales per number of competition, which is stores per city. Since we are interested in the scenario where a new store enters the market. We add 1 to the stores per city and divide Avg Sales by this number. Also assumed was that avg price and bottles sold per city were constant. The following cities are recommended for new markets for a new store location due to proximity to colleges and distances to major cities:
+
+* Windsor Heights
+* Cedar Falls
+* Milford/Spirit Lake
+* Iowa City/Coralville
+* Ames
+* Mason City/Clear Lake
+
+ Using the types of Liquor sold (binning them into types), the ideal mix of products to be sold was calculated, which is based on the aggregate of top 10 cities. 
 
 Further Analysis can be performed on the brand and size of each type of liquor, as well as the optimal price based on calculated price elasticities. 
