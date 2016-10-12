@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Project 2: Evaluating Year 2000 Billboard Top 100 Data Set"
+title: "Iowa Liquor Market Research for New Store Locations"
 ---
+
 #### Iowa Liquor Market Research for New Store Locations
 
 Scenario involves a client, who is a liquor store owner in Iowa, that is looking to expand to new locations in Iowa. The data (10% sample of the dataset) imported from the 
