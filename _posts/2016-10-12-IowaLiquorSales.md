@@ -15,7 +15,9 @@ The following steps are taken in this analysis:
 3. Exploratory Data Analysis & Visualization
 4. Regression Analysis
 
-The Jupyter Notebook code can be found [here.]
+The Jupyter Notebook code can be found [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-03/starter-code/Project%203%20Starter%20Code.ipynb)
+
+The data set and external data sets can be found [here.](https://github.com/adalal80/GA-DSI/tree/master/projects/projects-weekly/project-03/Resources)
 
 ## Importing Dataset and Data Munging
 The data set is 10% random sample of the 2015 State of Iowa liquor sales data. There were missing values, particularly in the County and Category fields. There were also Cities that were misspelled. Once these were cleaned up, exploratory data analysis was performed.
