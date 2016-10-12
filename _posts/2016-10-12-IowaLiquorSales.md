@@ -15,6 +15,7 @@ The following steps are taken in this analysis:
 3. Exploratory Data Analysis & Visualization
 4. Regression Analysis
 
+The Jupyter Notebook code can be found [here.]
 
 ## Importing Dataset and Data Munging
 The data set is 10% random sample of the 2015 State of Iowa liquor sales data. There were missing values, particularly in the County and Category fields. There were also Cities that were misspelled. Once these were cleaned up, exploratory data analysis was performed.
@@ -24,7 +25,7 @@ The data is highly skewed given the population density of Iowa is skewed. More p
 
 Plotting histograms of other variables, like number of stores, sales (dollars) were also skewed. 
 
-#Constructing the predictors
+# Constructing the predictors
 The following predictors are used in the regression:
 
 1. Unique Items per Store
@@ -33,7 +34,8 @@ The following predictors are used in the regression:
 4. 2015 City Population
 5. 2015 Yearly Per Capita Income per County
 
-The target variable is: Bottles Sold
+#The target variable
+Bottles Sold, which is the sum of all bottles sold per store number
 
 # Unique Items per Store
 This predictor looks at all unique items per store number and using it as a proxy variable for store size. Hypothesis is that this predictor should be positively correlated with Bottles Sold.
@@ -41,7 +43,7 @@ This predictor looks at all unique items per store number and using it as a prox
 # Number of Stores per City
 Summing all the stores in a City gives Number of Stores per City, which is used as number of competitors. This predictor should be negatively correlated with Bottles Sold
 
-#Average Price
+# Average Price
 Aggregating total Sales (Dollars) and Bottle Sales, and taking an average of Sales/Bottles gives average price of the goods sold at each store. Price should be negatively correlated with Bottles Sold
 
 # City Population
@@ -57,7 +59,7 @@ Both the Population and Per Capita Income should be positively correlated with B
 
 The dataframe will be constructed to get the target (df_y) and the data for the predictors (df_X), which will then be split into train and test sets. The target variable is Bottles Sold. The predictors that will be used are the following:
 # Target Variable:
-* Yearly Bottles Sold (per each Store)
+* Yearly Bottles Sold (per each Store Number)
 
 # Predictors:
 * Items per Store
