@@ -120,7 +120,10 @@ Three new cities are in the top 10:
 * Monticello (rural iowa)
 * Clear Lake (resort, next to Mason City)
 
+These weren't in method 1 because the actuals were lower than the predicted, which means there was unobserved error that contributed to the high residuals between bottles sold and predicted bottles sold.
+
 Given these two lists, it is recommended that these Cities be evaluated further for new location due to proximity colleges and distance to big cities:
+
 * Windsor Heights
 * Cedar Falls
 * Milford/Spirit Lake
@@ -132,6 +135,7 @@ Evaluation went further into an ideal mix of types of liquor to be sold in the n
 Proportion of liquor types sold in the top 10 cities:
 ![proportion of liquor types](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_liquortypes.png?raw=true)
 
+Applying the proportion of liquor types multiplied by the mean of average item per store (164 items) would result in the ideal mix:
 | Liquor Category | Ideal Mix (out of 164) | 
 | AMARETTO        | 1                      | 
 | BOURBON         | 0                      | 
