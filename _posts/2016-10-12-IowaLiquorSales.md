@@ -89,7 +89,7 @@ Linear Regression will be peformed on the training set, which will then be used 
 
 The correlation on the training dataset is 0.88. The coefficients for the regression show the strongest predictor is  Unique Items (positively correlated), followed by Average Price (negatively correlated), Stores per City/Number of competition (negatively correlated), and Population and Per Capital Yearly Income (both positively correlated). These relationships are what we expect to see: the number of items in a store would show that more available products to purchase, and as the number of competitors in the city as well as price should decrease the bottles sold. Population and Income should be positively correlated as the more people are in a city, the higher demand should be, and the more disposable income a person has, the more the person is able to spend on liquor. If the assumption of the Yearly per Capita Income is uniformly distributed across all cities in the county does not hold, then there would be a stronger bias, which requires city level Yearly per Capital Income.
 
-The correlation and MSE for the test data set are: 0.87 and 0.19
+The correlation and MSE for the test data set are: 0.87 and 0.19. The model r-squared and MSE is approximately close to the same metrics in training set. Plotting predictions versus residuals shows that there is constant variance, thus, there is no systematic error in the model.
 
 ## Forecasting a new entry 
 first method:
