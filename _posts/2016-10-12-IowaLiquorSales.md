@@ -147,6 +147,7 @@ Proportion of liquor types sold in the top 10 cities:
 ![proportion of liquor types](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_liquortypes.png?raw=true)
 
 Applying the proportion of liquor types multiplied by the mean of average item per store (164 items) would result in the ideal mix:
+
 | Liquor Category | Ideal Mix (out of 164) | 
 | AMARETTO        | 1                      | 
 | BOURBON         | 0                      | 
