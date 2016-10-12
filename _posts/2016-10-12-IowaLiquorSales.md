@@ -86,6 +86,7 @@ Linear Regression will be peformed on the training set, which will then be used 
 
 ![Log Normalized Linear Regression on Test Data](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_Predicted_v_Actual_Test.png?raw=true)
 
+The model coefficients are:
 ![Linear_regression_coefficients](https://github.com/adalal80/adalal80.github.io/blob/master/images/Linear_regression_coeff.png?raw=true)
 
 The correlation on the training dataset is 0.88. The coefficients for the regression show the strongest predictor is  Unique Items (positively correlated), followed by Average Price (negatively correlated), Stores per City/Number of competition (negatively correlated), and Population and Per Capital Yearly Income (both positively correlated). These relationships are what we expect to see: the number of items in a store would show that more available products to purchase, and as the number of competitors in the city as well as price should decrease the bottles sold. Population and Income should be positively correlated as the more people are in a city, the higher demand should be, and the more disposable income a person has, the more the person is able to spend on liquor. If the assumption of the Yearly per Capita Income is uniformly distributed across all cities in the county does not hold, then there would be a stronger bias, which requires city level Yearly per Capital Income.
@@ -98,6 +99,7 @@ What happens if another store enters the market? Assuming Quantity (Bottles Sold
 
 Once we know which markets to enter, we can find the average number of items among the competitors,types of competitors, and also the items and prices to which we place in the store.
 
+![Impact of entry into new market](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_impact_entry.png?raw=true)
 
 The following cities are either suburbs (Windsor Heights, Bettendorf, Coralville), college towns (Mt. Vernon, Iowa CityCedar Falls, or near a resort/lake (Spirit Lake, Milford, Mason City). Categorizing the Category Name to bins of liquor types, we can find the ideal mix of inventory using the average items per store, which was calculated above (164 items per store)
 
@@ -124,6 +126,11 @@ Given these two lists, it is recommended that these Cities be evaluated further 
 * Milford/Spirit Lake
 * Iowa City/Coralville
 * Mason City/Clear Lake
+
+Evaluation went further into an ideal mix of types of liquor to be sold in the new location. Based on the mean of average unique items in top 10 cities in method 1 and the proportion of each type of liquor type sold of all 10 cities, the amount of liquors can be estimated to be sold in the new location.
+
+Proportion of liquor types sold in the top 10 cities:
+![proportion of liquor types](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_liquortypes.png?raw=true)
 
 
 ## Conclusion
