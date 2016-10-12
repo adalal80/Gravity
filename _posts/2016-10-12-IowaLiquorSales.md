@@ -34,7 +34,7 @@ The following predictors are used in the regression:
 4. 2015 City Population
 5. 2015 Yearly Per Capita Income per County
 
-#The target variable
+# The target variable
 Bottles Sold, which is the sum of all bottles sold per store number
 
 # Unique Items per Store
