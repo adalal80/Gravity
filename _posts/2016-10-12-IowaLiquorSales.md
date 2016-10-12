@@ -131,8 +131,9 @@ Evaluation went further into an ideal mix of types of liquor to be sold in the n
 
 Proportion of liquor types sold in the top 10 cities:
 ![proportion of liquor types](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_liquortypes.png?raw=true)
-
-| Liquor Category | Ideal Mix (out of 164) | |-----------------|------------------------| 
+|                 |                        | 
+|-----------------|------------------------| 
+| Liquor Category | Ideal Mix (out of 164) | 
 | AMARETTO        | 1                      | 
 | BOURBON         | 0                      | 
 | BRANDIES        | 6                      | 
