@@ -77,7 +77,19 @@ The dataframe will be constructed to get the target (df_y) and the data for the 
 Linear Regression will be peformed on the training set, which will then be used to predict Bottles Sold. Before the regression is performed. Both the target and the predictors will be log-normalized because of the skewness, as shown in the histograms earlier.
 
 # Regression Results
+
+![Log Normalized Linear Regression on Training Data](https://raw.githubusercontent.com/adalal80/adalal80.github.io/master/images/ia_Predicted_v_Actual_Training.png)
+
+
+![Predicted vs Residuals](https://raw.githubusercontent.com/adalal80/adalal80.github.io/master/images/ia_Residuals.png)
+
+
+![Log Normalized Linear Regression on Test Data](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_Predicted_v_Actual_Test.png?raw=true)
+
+
 The correlation on the training dataset is 0.88. The coefficients for the regression show the strongest predictor is  Unique Items (positively correlated), followed by Average Price (negatively correlated), Stores per City/Number of competition (negatively correlated), and Population and Per Capital Yearly Income (both positively correlated). These relationships are what we expect to see: the number of items in a store would show that more available products to purchase, and as the number of competitors in the city as well as price should decrease the bottles sold. Population and Income should be positively correlated as the more people are in a city, the higher demand should be, and the more disposable income a person has, the more the person is able to spend on liquor. If the assumption of the Yearly per Capita Income is uniformly distributed across all cities in the county does not hold, then there would be a stronger bias, which requires city level Yearly per Capital Income.
+
+The correlation and MSE for the test data set are: 0.87 and 0.19
 
 ## Forecasting a new entry 
 first method:
@@ -110,7 +122,6 @@ Given these two lists, it is recommended that these Cities be evaluated further 
 * Cedar Falls
 * Milford/Spirit Lake
 * Iowa City/Coralville
-* Ames
 * Mason City/Clear Lake
 
 
