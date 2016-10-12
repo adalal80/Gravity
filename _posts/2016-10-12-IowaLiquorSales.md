@@ -132,6 +132,18 @@ Evaluation went further into an ideal mix of types of liquor to be sold in the n
 Proportion of liquor types sold in the top 10 cities:
 ![proportion of liquor types](https://github.com/adalal80/adalal80.github.io/blob/master/images/ia_liquortypes.png?raw=true)
 
+| Liquor Category | Ideal Mix (out of 164) | |-----------------|------------------------| 
+| AMARETTO        | 1                      | 
+| BOURBON         | 0                      | 
+| BRANDIES        | 6                      | 
+| GIN             | 6                      | 
+| OTHER           | 18                     | 
+| RUM             | 21                     | 
+| SCHNAPPS        | 7                      | 
+| SCOTCH          | 1                      | 
+| TEQUILA         | 9                      | 
+| VODKA           | 49                     | 
+| WHISKEY         | 46                     | 
 
 ## Conclusion
 
