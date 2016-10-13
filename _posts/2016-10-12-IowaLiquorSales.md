@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Iowa Liquor Market Research: Evaluation of New Market Entry"
+categories: ["Projects"]
+author: "Amish Dalal"
 ---
 
 #### Iowa Liquor Market Research for New Store Locations
 
-Scenario involves a client, who is a liquor store owner in Iowa, that is looking to expand to new locations in Iowa. The data is available from the state of Iowa website. The 10% random sample of the data is availabe from [here.](https://drive.google.com/file/d/0Bx2SHQGVqWaseDB4QU9ZSVFDY2M/view?usp=sharing). 
+Scenario involves a client, who is a liquor store owner in Iowa, that is looking to expand to new locations in Iowa. The data is available from the state of Iowa website. The 10% random sample of the data is availabe from [here.](https://drive.google.com/file/d/0Bx2SHQGVqWaseDB4QU9ZSVFDY2M/view?usp=sharing). This study is part of a group project, involving myself, and two others, [Amer Shalan](https://ashalan.github.io/ashalan.github.io/2016/10/12/IOWA_liquor/) and [Thomas Voreyer.](https://tvoreyer.github.io/projects/2016/10/12/Project_Three.html)
 
 The following steps are taken in this analysis:
 
