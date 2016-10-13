@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Iowa Liquor Market Research: Evaluation of New Market Entry"
+date: 2016-10-12
 categories: ["Projects"]
 author: "Amish Dalal"
 ---
