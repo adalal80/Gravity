@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Iowa Liquor Market Research: Evaluation of New Market Entry"
-date: 2016-10-12
-author: "Amish Dalal"
 ---
 
 #### Iowa Liquor Market Research for New Store Locations
