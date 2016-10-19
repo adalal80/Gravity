@@ -23,17 +23,17 @@ What does this mean? Well, normalizing for cost of living, the salary is depende
 
 ### Scraping Indeed, Glassdoor, and Cost of Living Index
 
-1. Scraping Indeed
+## Scraping Indeed
 
 The scraper code used to pull informat from indeed, can be found in the jupiter notebook located [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-04/webscraping_indeed.py)
 
-2. Glassdoor
+## Glassdoor
 
 The scraper code used to pull informat from Glassdoor, can be found [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-04/glassdoor-salary-scraper-master/scraper.py). This code was forked from [here.](https://github.com/ashalan/glassdoor-salary-scraper)
 
-3. Cost of Living Index
+## Cost of Living Index
 
-The code to scrape for Cost of Living index from www.expatistan.com.
+The code to scrape for Cost of Living index from [www.expatistan.com.](http://www.expatistan.com)
 
 ### Cleaning & Tidying the DataFrames
 
