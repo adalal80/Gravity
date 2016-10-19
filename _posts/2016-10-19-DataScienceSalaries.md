@@ -76,6 +76,8 @@ Features:
 
 ### Regression - Model 1
 
+The cities used in this model were: Atlanta, Austin, Boston, Dallas, Detroit, Houston, Kansas City, Los Angeles, Minneapolis, Nashville, San Francisco, San Jose, and Washington DC.
+
 GridsearchCV was used to find the optimal penalty and C value, using logistic regression as the estimator.
 GridsearchCV yielded: Penalty - L2, C - 0.9
 
@@ -111,6 +113,8 @@ The coefficients of the logistic regression are:
 The strongest negative coefficients are New York, Washington DC, San Francisco, and Boston. These have a negative relationship with probability of the salary being above median. This could be due to the high cost of living in these areas.
 
 ### Regression - Model 2
+
+The cities used in this model were: Atlanta, Austin, Boston, Dallas, Detroit, Los Angeles, Minneapolis, Nashville, San Francisco, San Jose, and Washington DC.
 
 Since the indeed dataframe does not contain Houston and Kansas City, these must be dropped from the glassdoor dataframe. From there, we perform the same regression as we used in the previous regression. 126 observations were dropped.
 
