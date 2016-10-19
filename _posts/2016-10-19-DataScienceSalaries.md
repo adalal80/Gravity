@@ -63,11 +63,11 @@ The image below shows the histogram for median salaries with cost of living fact
 
 ### Regression
 
-# Target Variable
+Target Variable
 
 * Above_median (1 if above median or 0 below median)
 
-# Features:
+Features:
 
 * Cities (Dummy for each City)
 * Entry-level (Dummy)
