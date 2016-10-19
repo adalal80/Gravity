@@ -80,17 +80,8 @@ Features:
 GridsearchCV was used to find the optimal penalty and C value, using logistic regression as the estimator.
 GridsearchCV yielded: Penalty - L2, C - 0.9
 
-            predicted_over_mean  predicted_under_mean
-over_mean                   154                    31
-under_mean                   55                   134
-             precision    recall  f1-score   support
+![Reg1](https://github.com/adalal80/adalal80.github.io/blob/master/images/proj4%20-%20Regression%201.png?raw=true)
 
-          0       0.81      0.71      0.76       189
-          1       0.74      0.83      0.78       185
-
-avg / total       0.77      0.77      0.77       374
-
-AUC Score is: 0.858901758902
 
 ![Regression AUC - Reg1](https://github.com/adalal80/adalal80.github.io/blob/master/images/AUC_reg1.png?raw=true)
 
@@ -124,17 +115,7 @@ Since the indeed dataframe does not contain Houston and Kansas City, these must 
 
 GridsearchCV yielded: Penalty - L2, C - 0.9, same as earlier.
 
-            predicted_over_mean  predicted_under_mean
-over_mean                   154                    31
-under_mean                   55                   134
-             precision    recall  f1-score   support
-
-          0       0.81      0.81      0.81       178
-          1       0.78      0.78      0.78       154
-
-avg / total       0.80      0.80      0.80       332
-
-AUC Score is: 0.887786370932
+![Reg2](https://github.com/adalal80/adalal80.github.io/blob/master/images/proj4%20-%20Regression%202.png?raw=true)
 
 ![Regression AUC - Reg2](https://github.com/adalal80/adalal80.github.io/blob/master/images/AUC_reg2.png?raw=true)
 
@@ -142,17 +123,8 @@ The AUC score increased by approximately 0.03, which shows that this model perfo
 
 Using this new model  on the indeed dataframe as the test set, let's see how well this model pridects salaries.
 
-            predicted_over_mean  predicted_under_mean
-over_mean                    30                    17
-under_mean                    8                    41
-             precision    recall  f1-score   support
+![indeed](https://github.com/adalal80/adalal80.github.io/blob/master/images/Proj4%20-%20Indeed.png?raw=true)
 
-          0       0.71      0.84      0.77        49
-          1       0.79      0.64      0.71        47
-
-avg / total       0.75      0.74      0.74        96
-
-AUC Score is: 0.753799392097
 
 ![Regression AUC - Indeed](https://github.com/adalal80/adalal80.github.io/blob/master/images/AUC_reg_indeed.png?raw=true)
 
