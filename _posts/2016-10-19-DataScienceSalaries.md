@@ -21,17 +21,17 @@ The process was to perform a regression on glassdoor salaries, and then use the 
 
 What does this mean? Well, normalizing for cost of living, the salary is dependent on experience level and location. As the demand for data scientist is increasing, to attract the brightest minds, a company might be more inclined to overpay if the company is located outside of Bay Area, New York, Washington DC, and Boston (all had negative coefficients).
 
-### Scraping Indeed, Glassdoor, and Cost of Living Index
+## Scraping Indeed, Glassdoor, and Cost of Living Index
 
-## Scraping Indeed
+#### Scraping Indeed
 
 The scraper code used to pull informat from indeed, can be found in the jupiter notebook located [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-04/webscraping_indeed.py)
 
-## Glassdoor
+#### Glassdoor
 
 The scraper code used to pull informat from Glassdoor, can be found [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-04/glassdoor-salary-scraper-master/scraper.py). This code was forked from [here.](https://github.com/ashalan/glassdoor-salary-scraper)
 
-## Cost of Living Index
+#### Cost of Living Index
 
 The code to scrape for Cost of Living index from [www.expatistan.com.](http://www.expatistan.com)
 
