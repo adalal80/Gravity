@@ -3,7 +3,7 @@ layout: post
 title: "Predicting Data Scientist Salaries Using Logistic Regression"
 ---
 
-#### Predicting Data Scientist Salaries Using Logistic Regression
+## Predicting Data Scientist Salaries Using Logistic Regression
 
 Scenario involves being a data scientist contracted by a firm that is rapidly expanding. Looking for new data scientist is vital for the expansion. Management thinks the best way to gauge salary amounts is to take a look at what industry factors influence the pay scale for data scientist. The jupyter code can be found [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-04/scraping-project-4-starter_JPF.ipynb). This was done as a group project with JP Freely, Jesse Sanford, and Kristen Su.
 
@@ -23,15 +23,15 @@ What does this mean? Well, normalizing for cost of living, the salary is depende
 
 ## Scraping Indeed, Glassdoor, and Cost of Living Index
 
-#### Scraping Indeed
+##### Scraping Indeed
 
 The scraper code used to pull informat from indeed, can be found in the jupiter notebook located [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-04/webscraping_indeed.py)
 
-#### Glassdoor
+##### Glassdoor
 
 The scraper code used to pull informat from Glassdoor, can be found [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-04/glassdoor-salary-scraper-master/scraper.py). This code was forked from [here.](https://github.com/ashalan/glassdoor-salary-scraper)
 
-#### Cost of Living Index
+##### Cost of Living Index
 
 The code to scrape for Cost of Living index from [www.expatistan.com.](http://www.expatistan.com)
 
@@ -39,7 +39,7 @@ The code to scrape for Cost of Living index from [www.expatistan.com.](http://ww
 
 Extensive cleaning was performed to convert salaries into low salary, high salary and median salary, as well cleaning cities and titles, including binning into entry, mid, and senior-level bins. The jupyter notebook contains all the code for the cleaning.
 
-### Visualizations
+## Visualizations
 
 The distribution of entry-level, mid-level, and senior-level bins are: 90,663, and 378 respectively. The low sample size in entry-level bin compared to other bins is quite  low, and will be problematic when plotting the distribution.
 
@@ -53,14 +53,14 @@ The image below shows the histogram for median salaries with cost of living fact
 ![Median Salary Normalized](https://github.com/adalal80/adalal80.github.io/blob/master/images/Salary_Histogram_norm.png?raw=true)
 
 
-### Assumptions
+## Assumptions
 
 1) Normalizing salaries to adjust for Cost of Living, using NYC as base.
 2) Used only experience, and cities as the features due not having access to skills in glassdoor.
 3) There will be bias due to not having access to bonus or perks offered by companies.
 4) Assumption is that each company in each market would offer similar bonus and perks, such that each company would pose an equal chance to hire a data scientist. In other words, they would be competitive in hiring for a data scientist.
 
-### Regression
+## Regression
 
 Target Variable
 
