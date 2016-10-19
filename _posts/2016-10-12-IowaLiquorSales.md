@@ -5,6 +5,27 @@ title: "Iowa Liquor Market Research: Evaluation of New Market Entry"
 
 #### Iowa Liquor Market Research for New Store Locations
 
+Scenario involves being a data scientist contracted by a firm that is rapidly expanding. Looking for new data scientist is vital for the expansion. Management thinks the best way to gauge salary amounts is to take a look at what industry factors influence the pay scale for data scientist.
+
+The following steps are taken in this analysis:
+
+1. Scraping Indeed, Glassdoor, and Cost of Living index
+2. Combining into separate Data Frames
+3. Cleaning/Tidying Data
+4. Plotting/Normalizing
+5. Regressions
+
+The cities scraped for this project were: Atlanta, Austin, Boston, Dallas, Detroit, Houston, Kansas City, Los Angeles, Minneapolis, Nashville, San Francisco, San Jose, and Washington DC.
+
+The process was to perform a regression on glassdoor salaries, and then use the model to predict the data from Indeed. Findings from the regression found that incorporating Cost of Living Index with the median Salary found on glassdoor, with binning the titles into Entry-level, Mid-level, and Senior Level bins, and creating dummy variables for each city gave an AUC score of 0.86 (with 1 being perfect) and F1 score of 0.77. The AUC score is a metric that analyzes the relationship between false positives and True positives while running a classification regression. The F1 score looks at the accuracy of the model. 
+
+What does this mean? Well, normalizing for cost of living, the salary is dependent on experience level and location. As the demand for data scientist is increasing, to attract the brightest minds, a company might be more inclined to overpay if the company is located outside of Bay Area, New York, and Boston (all had negative coefficients).
+
+### Scraping Indeed, Glassdoor, and Cost of Living Index
+
+
+
+
 Scenario involves a client, who is a liquor store owner in Iowa, that is looking to expand to new locations in Iowa. The data is available from the state of Iowa website. The 10% random sample of the data is availabe from [here.](https://drive.google.com/file/d/0Bx2SHQGVqWaseDB4QU9ZSVFDY2M/view?usp=sharing). This study is part of a group project, involving myself, and two others, [Amer Shalan](https://ashalan.github.io/ashalan.github.io/2016/10/12/IOWA_liquor/) and [Thomas Voreyer.](https://tvoreyer.github.io/projects/2016/10/12/Project_Three.html)
 
 The following steps are taken in this analysis:
