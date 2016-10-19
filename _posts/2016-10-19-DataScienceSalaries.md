@@ -128,4 +128,6 @@ Using this new model  on the indeed dataframe as the test set, let's see how wel
 
 ![Regression AUC - Indeed](https://github.com/adalal80/adalal80.github.io/blob/master/images/AUC_reg_indeed.png?raw=true)
 
+### Conclusion
 
+The model was used utilized GridsearchCV with logistic regression as the estimator. The target variable is whether the salary is above or below the median. The features used were cities (as dummies) and experience bins (entry-level, mid-level, and senior-level bins). The first regression had an AUC score of 0.86, while the second (after dropping Houston, and Kansas City since indeed dataframe did not have those cities) had an AUC score of 0.89. The AUC score increased 0.03, which is an improvement, the F1 score also increased by 0.03. With the features that were used, the model did a reasonable job in predicting whether a position would be above median or below median. Thus, using these features, the model should be robust during salary negotiations for potential data scientists.
