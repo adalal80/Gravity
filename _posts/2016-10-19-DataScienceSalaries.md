@@ -27,7 +27,7 @@ Scraping Indeed
 
 The scraper code used to pull informat from indeed, can be found in the jupiter notebook located [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-04/webscraping_indeed.py)
 
- Glassdoor
+Glassdoor
 
 The scraper code used to pull informat from Glassdoor, can be found [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-04/glassdoor-salary-scraper-master/scraper.py). This code was forked from [here.](https://github.com/ashalan/glassdoor-salary-scraper)
 
@@ -35,7 +35,7 @@ Cost of Living Index
 
 The code to scrape for Cost of Living index from [www.expatistan.com.](http://www.expatistan.com)
 
-### Cleaning & Tidying the DataFrames
+## Cleaning & Tidying the DataFrames
 
 Extensive cleaning was performed to convert salaries into low salary, high salary and median salary, as well cleaning cities and titles, including binning into entry, mid, and senior-level bins. The jupyter notebook contains all the code for the cleaning.
 
