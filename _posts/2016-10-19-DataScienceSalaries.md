@@ -48,7 +48,8 @@ The image below shows the histogram for median salaries. There is skewness in th
 ![Median Salary](https://github.com/adalal80/adalal80.github.io/blob/master/images/Salary_Histogram.png?raw=true)
 
 
-The image below shows the histogram for median salaries with cost of living factored in. 
+The image below shows the histogram for median salaries with cost of living factored in. The distributions show more of a normal distribution.
+
 ![Median Salary Normalized](https://github.com/adalal80/adalal80.github.io/blob/master/images/Salary_Histogram_norm.png?raw=true)
 
 
