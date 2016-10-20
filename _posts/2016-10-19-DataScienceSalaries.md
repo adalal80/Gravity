@@ -5,7 +5,7 @@ title: "Predicting Data Scientist Salaries Using Logistic Regression"
 
 ## Predicting Data Scientist Salaries Using Logistic Regression
 
-Scenario involves being a data scientist contracted by a firm that is rapidly expanding. Looking for new data scientist is vital for the expansion. Management thinks the best way to gauge salary amounts is to take a look at what industry factors influence the pay scale for data scientist. The jupyter code can be found [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-04/scraping-project-4-starter_JPF.ipynb). This was done as a group project with JP Freely, Jesse Sanford, and Kristen Su.
+Scenario involves being a data scientist contracted by a firm that is rapidly expanding. Looking for new data scientist is vital for the expansion. Management thinks the best way to gauge salary amounts is to take a look at what industry factors influence the pay scale for data scientist. The jupyter code can be found [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-04/scraping-project-4-starter_JPF.ipynb). This was done as a group project with JP Freeley, Jesse Sanford, and Kristen Su.
 
 The following steps are taken in this analysis:
 
