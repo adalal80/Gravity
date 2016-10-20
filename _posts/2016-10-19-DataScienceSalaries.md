@@ -90,27 +90,25 @@ The coefficients of the logistic regression are:
 
 | Variables          | Coefficients | 
 |--------------------|--------------| 
-| entry_bin          | -1.945187    | 
-| mid_bin            | -0.206333    | 
-| senior_bin         | 1.943905     | 
-| City_atlanta       | -0.33349     | 
-| City_austin        | 1.036828     | 
-| City_boston        | -1.100968    | 
-| City_dallas        | 1.645433     | 
-| City_detroit       | 2.785725     | 
-| City_houston       | 1.103457     | 
-| City_kansas city   | 0.910086     | 
-| City_los angeles   | 0.449568     | 
-| City_minneapolis   | -0.09097     | 
-| City_nashville     | -0.203721    | 
-| City_new york      | -3.098401    | 
-| City_san francisco | -1.837764    | 
-| City_san jose      | 0.856329     | 
-| City_seattle       | -0.30393     | 
-| City_washington dc | -2.025796    | 
- 
+| mid_bin            | 0.425147     | 
+| senior_bin         | 2.796456     | 
+| City_atlanta       | 1.383603     | 
+| City_austin        | 1.996431     | 
+| City_boston        | 0.539824     | 
+| City_dallas        | 2.955003     | 
+| City_detroit       | 5.770552     | 
+| City_los angeles   | 1.783665     | 
+| City_minneapolis   | 1.708747     | 
+| City_nashville     | 1.434283     | 
+| City_san francisco | 0.031495     | 
+| City_san jose      | 2.386696     | 
+| City_seattle       | 0.941951     | 
+| City_washington dc | -0.62814     | 
 
-The strongest negative coefficients are New York, Washington DC, San Francisco, and Boston. These have a negative relationship with probability of the salary being above median. This could be due to the high cost of living in these areas.
+
+Entry-level and New York were omitted to serve as the base case for their respective categories. 
+Mid and Senior-level bins shows that we expect their probabilities to be above median is higher than entry-level
+Washington DC shows to have a negative coefficient meaning the probability of being the above median. This could be due to government jobs paying less due to having better benefits. One way to test for this, is to look at sectors and how each sector correlates to being above or below median.
 
 ### Regression - Model 2
 
