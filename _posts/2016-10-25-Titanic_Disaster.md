@@ -24,6 +24,10 @@ A logistic regression was used in the first model, with L2 as the penalty. The f
 
 Confusion Matrix:
 
+
+![CM_LOGREG](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project5/CM_LogReg.png?raw=true)
+
+
 | 			   |not_survived | survived |     
 |--------------|-------------|----------| 
 | not_survived |     126     |    20    | 
@@ -39,6 +43,9 @@ F1 Score     : 0.6909
 A Gridsearch CV was used in the second model, which gave a penalty of L2. The following are the confusion matrix, model score, and F1 score:
 
 Confusion Matrix:
+
+![CM_GS_LOGREG](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project5/CM_GS_LogReg.png?raw=true)
+
 
 | 			   |not_survived | survived |     
 |--------------|-------------|----------| 
@@ -57,6 +64,10 @@ Confusion Matrix:
 
 A Gridsearch CV was used in the second model with KNN as the estimator. The following are the confusion matrix, model score, and F1 score:
 
+Confusion Matrix:
+
+![CM_GS_KNN](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project5/CM_GS_KNN.png?raw=true)
+
 | 			   |not_survived | survived |     
 |--------------|-------------|----------| 
 | not_survived |     124     |    22    | 
@@ -74,6 +85,9 @@ The model score faired better here than in the Gridsearch with logistic as the e
 Decision Tree was used in the last model. The following are the confusion matrix, model score, and F1 score:
 
 Confusion Matrix:
+
+![CM_DT](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project5/CM_DT.png?raw=true)
+
 
 | 			   |not_survived | survived |     
 |--------------|-------------|----------| 
