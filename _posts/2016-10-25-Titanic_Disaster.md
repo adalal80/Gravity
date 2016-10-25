@@ -18,6 +18,8 @@ Age is a continuous variable, are binned into Child, Teenage, Young Adult, Adult
 
 Features used in Model Validation: Pclass, Sex, Age_bins, Sibsp, Parch, and Fare (normalized). The class label is whether the person survived or not (survived).
 
+The model score, F1 score (which is a weighted average of the precision and recall), and AUC will be used to compare each model. Considering this is an evaluation of a disaster, where the two classes are either survived or dead, minimizing false positives (predicting survived, but actually dead) should be of highest important, especially when the disaster already occurs. 
+
 #### 1. Logistic Regression
 
 A logistic regression was used in the first model, with L2 as the penalty. The following are the confusion matrix, model score, and F1 score:
@@ -60,7 +62,7 @@ Model - Score: 0.80341
 
 F1 Score     : 0.70129
 
-The model score faired better here than in the Gridsearch with logistic as the estimator, while the F1 score was slightly worse.
+The model score faired better here than in the Gridsearch with logistic as the estimator, while the F1 score was slightly worse. The confusion matrix yielded same results as the GridSearchCV with Logistic Regression.
 
 
 #### 4. Decision Trees
@@ -76,6 +78,8 @@ Model - Score: 0.82051
 
 F1 Score     : 0.74074
 
+The model score and F1 score were the highest with Decision Tree.
+
 ROC Curve for each model:
 
 ![ROC](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project5/Project5_ROC.png?raw=true)
@@ -83,4 +87,6 @@ ROC Curve for each model:
 
 ### Conclusion
 
+After evaluating the models, the Decision Tree resulted in the lowest False Positives, and its AUC score was slightly below the others (approximately 0.008). The reason why finding a model minimizing False Positives, is that in a disaster, the authorities in charge of recovery would not want to say a high number of people predicting that they are alive, yet actually being dead, as it would take a huge toll on their friends and family.
+Considering the AUC scores for all the models were in close approximation, the Decision Tree model yielded better model score and F1 score.
 
