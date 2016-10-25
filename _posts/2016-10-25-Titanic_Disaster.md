@@ -27,13 +27,6 @@ Confusion Matrix:
 
 ![CM_LOGREG](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project5/CM_LogReg.png?raw=true)
 
-
-| 			   |not_survived | survived |     
-|--------------|-------------|----------| 
-| not_survived |     126     |    20    | 
-| survived     |      31     |    57    | 
-
-
 Model - Score: 0.78205
 
 F1 Score     : 0.6909
@@ -46,11 +39,6 @@ Confusion Matrix:
 
 ![CM_GS_LOGREG](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project5/CM_GS_LogReg.png?raw=true)
 
-
-| 			   |not_survived | survived |     
-|--------------|-------------|----------| 
-| not_survived |     124     |    22    | 
-| survived     |      28     |    60    | 
 
 Model - Score: 0.78632
 
@@ -68,11 +56,6 @@ Confusion Matrix:
 
 ![CM_GS_KNN](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project5/CM_GS_KNN.png?raw=true)
 
-| 			   |not_survived | survived |     
-|--------------|-------------|----------| 
-| not_survived |     124     |    22    | 
-| survived     |      28     |    60    | 
-
 Model - Score: 0.80341
 
 F1 Score     : 0.70129
@@ -87,12 +70,6 @@ Decision Tree was used in the last model. The following are the confusion matrix
 Confusion Matrix:
 
 ![CM_DT](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project5/CM_DT.png?raw=true)
-
-
-| 			   |not_survived | survived |     
-|--------------|-------------|----------| 
-| not_survived |     132     |    14    | 
-| survived     |      28     |    60    | 
 
 
 Model - Score: 0.82051
