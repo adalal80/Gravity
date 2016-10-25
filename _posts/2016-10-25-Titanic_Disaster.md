@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Predicting Data Scientist Salaries Using Logistic Regression"
+title: "A Classification Analysis of Titanic Survivors"
 ---
 
 ## A Classification Analysis of Titanic Survivors
