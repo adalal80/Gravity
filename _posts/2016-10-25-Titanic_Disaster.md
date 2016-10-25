@@ -16,11 +16,13 @@ Age is a continuous variable, are binned into Child, Teenage, Young Adult, Adult
 
 ### Model Validation
 
-Features used in Model Validation: Pclass, Sex, Age_bins, Sibsp, Parch, Fare (normalized). The class label is whether the person survived or not (survived).
+Features used in Model Validation: Pclass, Sex, Age_bins, Sibsp, Parch, and Fare (normalized). The class label is whether the person survived or not (survived).
 
 #### 1. Logistic Regression
 
-Confusion Matrix
+A logistic regression was used in the first model, with L2 as the penalty. The following are the confusion matrix, model score, and F1 score:
+
+Confusion Matrix:
 
 | 			   |not_survived | survived |     
 |--------------|-------------|----------| 
@@ -34,7 +36,9 @@ F1 Score     : 0.6909
 
 #### 2. Gridsearch with Logistic Regression
 
-Confusion Matrix
+A Gridsearch CV was used in the second model, which gave a penalty of L2. The following are the confusion matrix, model score, and F1 score:
+
+Confusion Matrix:
 
 | 			   |not_survived | survived |     
 |--------------|-------------|----------| 
@@ -45,22 +49,31 @@ Model - Score: 0.78632
 
 F1 Score     : 0.70588
 
+The model score and F1 score show a slight increase than the logistic model
+
 #### 3. Gridsearch with KNN
 
-Confusion Matrix
+Confusion Matrix:
+
+A Gridsearch CV was used in the second model with KNN as the estimator. The following are the confusion matrix, model score, and F1 score:
 
 | 			   |not_survived | survived |     
 |--------------|-------------|----------| 
 | not_survived |     124     |    22    | 
 | survived     |      28     |    60    | 
 
-Model - Score: .80341
+Model - Score: 0.80341
 
 F1 Score     : 0.70129
 
+The model score faired better here than in the Gridsearch with logistic as the estimator, while the F1 score was slightly worse.
+
+
 #### 4. Decision Trees
 
-Confusion Matrix
+Decision Tree was used in the last model. The following are the confusion matrix, model score, and F1 score:
+
+Confusion Matrix:
 
 | 			   |not_survived | survived |     
 |--------------|-------------|----------| 
@@ -72,7 +85,7 @@ Model - Score: 0.82051
 
 F1 Score     : 0.74074
 
-ROC Curve
+ROC Curve for each model:
 
 ![ROC](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project5_ROC.png?raw=true)
 
