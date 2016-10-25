@@ -18,7 +18,7 @@ Age is a continuous variable, are binned into Child, Teenage, Young Adult, Adult
 
 Features used in Model Validation: Pclass, Sex, Age_bins, Sibsp, Parch, Fare (normalized). The class label is whether the person survived or not (survived).
 
-#### *Logistic Regression
+#### * Logistic Regression
 
 Confusion Matrix
 
@@ -32,7 +32,7 @@ Model - Score: 0.78205
 
 F1 Score     : 0.6909
 
-#### *Gridsearch with Logistic Regression
+#### * Gridsearch with Logistic Regression
 
 Confusion Matrix
 
@@ -45,7 +45,7 @@ Model - Score: 0.78632
 
 F1 Score     : 0.70588
 
-#### *Gridsearch with KNN
+#### * Gridsearch with KNN
 
 Confusion Matrix
 
@@ -58,7 +58,7 @@ Model - Score: .80341
 
 F1 Score     : 0.70129
 
-#### *Decision Trees
+#### * Decision Trees
 
 Confusion Matrix
 
