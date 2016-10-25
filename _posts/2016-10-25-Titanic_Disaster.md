@@ -32,10 +32,8 @@ Model - Score: 0.78205
 
 F1 Score     : 0.6909
 
-Coefficients:
-
-
 #### Gridsearch with Logistic Regression
+
 Confusion Matrix
 
 | 			   |not_survived | survived |     
@@ -61,7 +59,14 @@ Model - Score: .80341
 F1 Score     : 0.70129
 
 #### Decision Trees
+
 Confusion Matrix
+
+| 			   |not_survived | survived |     
+|--------------|-------------|----------| 
+| not_survived |     132     |    14    | 
+| survived     |      28     |    60    | 
+
 
 Model - Score: 0.82051
 
