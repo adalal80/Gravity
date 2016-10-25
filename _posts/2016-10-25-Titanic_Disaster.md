@@ -82,6 +82,8 @@ The model score and F1 score were the highest with Decision Tree.
 
 ROC Curve for each model:
 
+Below are the ROC curves for the models. All models have approximately the same ROC (largest difference is 0.008)
+
 ![ROC](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project5/Project5_ROC.png?raw=true)
 
 
