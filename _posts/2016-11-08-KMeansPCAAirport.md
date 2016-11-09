@@ -11,6 +11,7 @@ This analysis investigates operations of major airports around the country to un
 - At the end of the year, this data is averaged out for each airport. Your datasets have these averaged for a 10 year range between 2004 and 2014
 - Over this 10 year range, some delay times have not improved or have worsened.
 
+The Jupyter Notebook associated with this blog, can be found [here.](https://github.com/adalal80/GA-DSI/blob/master/projects/projects-weekly/project-07/starter-code/project7-starter.ipynb)
 #### Hypothesis:
 Taxi Out time (time it takes to leave the airport from gate) is associate with congestion time. The number of flights in and out of the airport would cause the taxi out time to increase as the number of runways is limited. This will play a huge factor in departure delays. The variation between clusters should highlight the importance of this feature.
 
