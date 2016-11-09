@@ -75,10 +75,12 @@ Not Considering
 
 Using the features listed in the previous sections, PCA was performed using Robust Scalar to scale the data. From the Explained Variance Ratio, the number of components/features will be set to 2. 
 
-Explained Variance Ratio
+Explained Variance Ratio:
+
 ![Explained_Var_ratio](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/ExplainedVarianceRatio.png?raw=true)
 
-Using Distortion
+Using Distortion (Inertia):
+
 ![Distortion](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/Distortion_Kmeans.png?raw=true)
 
 Using numer of components = 2, the KMeans++ cluster model gives the following clusters:
