@@ -82,6 +82,8 @@ Using Distortion
 Using numer of components = 2, the KMeans++ cluster model gives the following clusters:
 ![KMeans_PCA](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/KMeans_PCA.png?raw=true)
 
+The silhouette score for 8 clusters was 0.39. While that may not be high, it provided the best clusters in terms of groupings. The best silhouette score was 0.54, which was for 2 clusters. 
+
 Performing a groupby on the cluster labels, using average of all the airports, gives us the following:
 ![XCluster_results](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/Xcluster_result.png?raw=true)
 
