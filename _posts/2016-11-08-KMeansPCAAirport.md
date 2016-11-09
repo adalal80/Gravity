@@ -85,15 +85,21 @@ Using numer of components = 2, the KMeans++ cluster model gives the following cl
 Performing a groupby on the cluster labels, using average of all the airports, gives us the following:
 ![XCluster_results](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/Xcluster_result.png?raw=true)
 
+Analyzing these results, shows how each cluster varies in each column. For example, clusters 2 and 4, show approximately the same percent columns, but the only difference taxi out time.  Another example would be clusters 1 and 7, show that percent on-time gate departures and arrivals are equivalent, but percent on-time airport departures and avg taxi out time are different.
+
 Using 3 Principal Components gives us the following 3D graph:
 ![3D](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/3D.png?raw=true)
 
 ### Conclusion
 The operational features are most correlated with delays are taxi out time (how long it takes from gate departure to take off), size and proximity of airports (more frequency of flights generally the more congested), and of course the the arrival of the plane. If the plane arrives late, the turnoaround time for offboarding, re-fueling, and on-boarding will be the same regardless of when it comes. Thus, if the plane arrives late, it will lead to departing late. Weather related data isn't known, but could use a proxy for departure cancellations and arrival diversions.
+
 Airport's Next Steps should be ensuring the following:
 
 1) Ensuring that proper equipment for weather is accessible, such as de-icing, snow plow etc...
+
 2) If frequency of flights/runways is high, thus causing long taxi delays, cost-benefit analysis on building another runway.
+
 3) Increase gate fees associated to airlines, thus only the more profitable companies can fly in/out. This should reduce number of flights. This would be similar to a usage tax.
+
 4) Ask airlines to increase the flight time to incorporate the average delays.
 
