@@ -39,22 +39,36 @@ Operations dataset lists delays, departures, arrivals and other operational metr
 
 ### Exploratory Data Analysis & Visualizations
 
-Two categorical variables created, based on the hub and spoke model of airports. Major hubs, secondary hubs, and spokes for 'ap_class'. FAA region class was created giving a number to each region. Airports were averaged over the years in the data, as there will be an airport in multiple clusters when doing the analysis. Analyzing the correlations between the features, there was multi-collinearity among many of the features. PCA will need to be conducted to reduce dimensionality.
+Two categorical variables created, based on the hub and spoke model of airports. Major hubs, secondary hubs, and spokes for 'ap_class'. Taking one step further and pulling out ATL and ORD into its own group is the variable 'ap_size'. FAA region class was created giving a number to each region. Airports were averaged over the years in the data, as there will be an airport in multiple clusters when doing the analysis. Analyzing the correlations between the features, there was multi-collinearity among many of the features. PCA will need to be conducted to reduce dimensionality.
 
-Departures vs Delays(min)
+To re-iterate, ap_size is 0 for spoke airports, 1 for secondary hubs, 2 for major hubs, and 3 is ATL and ORD, which are the two busiest airports.
+
+Histogram of Departure Delays shows approximately a normal distribution
+
 ![DepDelays](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/DepDelays.png?raw=true)
+
+Next four graphs shows a positive linear relationship among the variables in the graphs.
 
 Percent on-time gate arrivals vs percent on-time gate departures
 ![gatearrivaldep](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/gate_arrival_departures.png?raw=true)
 
+As percent on-time gate arrivals increases, so does the on-time gate departures, which makes sense, as the turnaround time for a flight is the constant. The amount of time it takes to get passengers off, re-fuel, getting the plane ready for the next flight, and getting passengers onboard, should take the same amount of time. Therefore the on-time gate departures depends on if the flight arrives on-time.
+
+
 Departures vs Average Airport Departure Delays
 ![DepvsDelays](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/DeparturesvsDelays.png?raw=true)
+
+While departures increase, there is a slight increase in departure delay. This shows while there is a slight increase in delay with more flights, airlines/airports handle the logistics efficiently, otherwise we would see a more positive correlation.
 
 Taxi Out Time vs Taxi Out Delay
 ![taxi_out_delay](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/taxi_out_delay.png?raw=true)
 
+Longer the taxi time for an airport, the higher the delay. This could be that there is a take-off queue which is causing the time and delays to increase.
+
 Average Gate Arrival vs Departure Arrival Delay
 ![arrival_dep_delay](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/arrival_dep_delay.png?raw=true)
+
+This graph re-iterates the percent on-time arrival vs percent on-time departure. If the flight arrives late, the flight departs late, but not at a 1 to 1 relationship, meaning that the airline tries to make up time in the turnaround process.
 
 #### Features to Consider
 
@@ -83,15 +97,17 @@ Using Distortion (Inertia):
 
 ![Distortion](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/Distortion_Kmeans.png?raw=true)
 
+This graph shows the inertia metrics for each cluster. The number of clusters increase, the density of the clusters increase (distortion decreases).
+
 Using numer of components = 2, the KMeans++ cluster model gives the following clusters:
 ![KMeans_PCA](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/KMeans_PCA.png?raw=true)
 
-The silhouette score for 8 clusters was 0.39. While that may not be high, it provided the best clusters in terms of groupings. The best silhouette score was 0.54, which was for 2 clusters. 
+The silhouette score for 8 clusters was 0.39. While that may not be high, it provided the best clusters in terms of groupings. The best silhouette score was 0.54, which was for 2 clusters. The cluster of 2 did not distinguish each cluster enough to make an analysis, while 8 did.
 
 Performing a groupby on the cluster labels, using average of all the airports, gives us the following:
 ![XCluster_results](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/Xcluster_result.png?raw=true)
 
-Analyzing these results, shows how each cluster varies in each column. For example, clusters 2 and 4, show approximately the same percent columns, but the only difference taxi out time.  Another example would be clusters 1 and 7, show that percent on-time gate departures and arrivals are equivalent, but percent on-time airport departures and avg taxi out time are different.
+Analyzing these results, shows how each cluster varies in each column. For example, clusters 2 and 4, show approximately the same percent columns, but the only difference taxi out time.  Another example would be clusters 1 and 7, show that percent on-time gate departures and arrivals are equivalent, but percent on-time airport departures and avg taxi out time are different. Cluster 8 is an oddball, it had only 1 airport, which was HPN (White Plains airport), which could not be grouped with another cluster. This would be considered as noise. Clusters 3 and 6 shows the close gate departure delays, but vastly different taxi out time and taxi out delay.
 
 Using 3 Principal Components gives us the following 3D graph:
 ![3D](https://github.com/adalal80/adalal80.github.io/blob/master/images/Project7/3D.png?raw=true)
