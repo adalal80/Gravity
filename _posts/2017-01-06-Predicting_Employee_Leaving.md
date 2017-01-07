@@ -5,12 +5,7 @@ title: "Why Do Good Employees Leave?"
 
 ## Why Do Good Employees Leave?
 
-This analysis looks what which employees with a high evaluation score will leave the company. The dataset was taken from Kaggle, which is located [here.](https://www.kaggle.com/ludobenistant/hr-analytics).  The dataset does not need any Data Munging, so this analysis will cover Data Analysis on what features contribute to good employees leaving. 
-
-
-### The Data
-
-
+This analysis looks what which employees with a high evaluation score will leave the company. The dataset was taken from Kaggle, which is located [here.](https://www.kaggle.com/ludobenistant/hr-analytics)  The dataset does not need any Data Munging, so this analysis will cover Data Analysis on what features contribute to good employees leaving. 
 
 
 ### Overall analysis of employees that Leave
@@ -55,7 +50,7 @@ After including all features in the Random Forest model, salary, promoted, work 
 
 #### Random Forest
 
-Random Forest has the highest accuracy, with 12 having Type I error and 19 having Type II error. 
+Random Forest has the highest accuracy, with 9 having Type I error and 17 having Type II error. 
 
 ![random forest](https://github.com/adalal80/adalal80.github.io/blob/master/images/hranalytics/RandomForest.png?raw=true)
 
@@ -63,13 +58,13 @@ Random Forest has the highest accuracy, with 12 having Type I error and 19 havin
 
 #### Extra Trees
 
-Extra Trees has a higher Type I error and one less Type II error. Although overall accuracy is 0.001 less than Random Forest.
+Extra Trees has a higher Type I error and the same Type II error as Random Forest. Although overall accuracy is 0.001 less than Random Forest.
 
 ![extra trees](https://github.com/adalal80/adalal80.github.io/blob/master/images/hranalytics/ExtraTrees.png?raw=true)
 
 #### Gradient Boosting
 
-Gradient Boosting has the lowest Type II error of all three, though the accuracy score is .014 lower than Extra Trees model.
+Gradient Boosting has the lowest Type II error of all three, though the accuracy score is .01 lower than Random Forest model.
 
 ![gradient boosting](https://github.com/adalal80/adalal80.github.io/blob/master/images/hranalytics/GradientBoosting.png?raw=true)
 
